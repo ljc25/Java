@@ -1,15 +1,20 @@
-package cn.hu.a;
+package demo02;
 
-public class User {
-    private String name; //姓名
+public class person {
+
+    private String name;
     private int money;
 
-    public User(String name, int money) {
+
+    public person(){}
+    public person(String name, int money) {
         this.name = name;
         this.money = money;
     }
 
-    public User() {
+    //展示有多少钱
+    public void show(){
+        System.out.println("我叫："+name+",我有多少钱："+money);
     }
 
     public String getName() {
